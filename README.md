@@ -9,7 +9,7 @@ You only need only one file:
 
 You can run everything from the index.php file, see the file for usage.
 
-Step 1 - Initialize
+### Step 1 - Initialize
 ```php
 // Include the class file
 require 'Encryption.php';
@@ -21,13 +21,13 @@ const KEY = 'secretkey';
 $message = 'Hello world';
 ```
 
-Step 2 - Encrypt
+### Step 2 - Encrypt
 ```php
 $encoded_text = Encryption::Encode($message, KEY);
 //@return d1pXc2dsYVBqQ0NrSkJ1Zy85RWprUT09
 ```
 
-Step 3 - Decrypt
+### Step 3 - Decrypt
 ```php
 $decoded_text = Encryption::Decode($encoded_text, KEY);
 //@return Hello world
