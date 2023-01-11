@@ -44,6 +44,6 @@ Class Encryption{
         while(strlen($hash) < $size){
             $hash = $hash.$hash;
         }
-        return substr($hash, 0, 16);
+        return substr($hash, 0, $size);
     }
 }
